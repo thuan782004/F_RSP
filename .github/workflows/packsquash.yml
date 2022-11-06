@@ -13,6 +13,8 @@ jobs:
           fetch-depth: 0 # A non-shallow repository clone is required
       - name: Run PackSquash
         uses: ComunidadAylas/PackSquash-action@v3
+        with: 
+          zip_spec_conformance_level: disregard
       - name: Download optimized pack
         uses: actions/download-artifact@v3
         with:
